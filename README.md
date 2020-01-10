@@ -1,0 +1,2 @@
+# Deploying-a-Model-Into-Production
+This repository describes the steps taken to deploy a model trained and tested with scikit-learn python library. This model predicts if a given song is of type "Rock" or "Hip-Hop" based on certain features. Check link : https://github.com/femtonelson/Classifying-Songs-Genres-From-Audio-Data. This is done with a web service development framework in Python known as Flask.
