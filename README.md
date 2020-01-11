@@ -37,6 +37,7 @@ $sudo pip3 install -U scikit-learn
 
 #Configure Flask application, configuration file : ""[api.py](/api.py)
 
+```
 $sudo python3 api.py
 (base) ubuntu@ip-10-0-4-193:~$ sudo python3 api.py
 Model loaded
@@ -52,8 +53,8 @@ Model loaded
 Model columns loaded
  * Debugger is active!
  * Debugger PIN: 150-894-586
-
 ```
+
 
 # Send JSON Requests to Flask in API client - Postman
 
