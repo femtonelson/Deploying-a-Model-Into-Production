@@ -12,17 +12,17 @@ In this excercise, the Flask API will be used. It has an inbuilt light-weight we
 
 Flask web server will be installed on a publicly accessible AWS instance and will be configured to respond to JSON requests (sent by a Postman API client) with song type predictions.  
 
-Three files obtained from the model training excercise will be available on the server : Check link https://github.com/femtonelson/Classifying-Songs-Genres-From-Audio-Data
-- api.py : Contains a function which pre-processes an input pandas dataframe and returns a numpy array with the reduced features
-                       Columns expected in the input dataframe : track_id, acousticness, danceability, energy, instrumentalness, liveness, speechiness, tempo, valence
-- logreg.pkl : The trained Logistic Regression model
-- logreg_columns.pkl : The column names of the input dataframe
-
 # Model Deployment Procedure
 
 - Setup AWS EC2 instance in a public subnet with a public IP address
 - Install and configure Flask on this machine, to be accessible on port 5500 for example
 - Run Postman API client and send requests to the server to obtain predictions
+
+Three files obtained from the model training excercise should be available in the working directory on the server :
+- data_preprocess.py : Provides the function which pre-processes an input pandas dataframe and returns a numpy array with the reduced features
+- logreg.pkl : The trained Logistic Regression model
+- logreg_columns.pkl : The column names of the input dataframe
+
 
 # Setup a publicly accessible AWS EC2 Instance and Flask API Server
 ```
