@@ -4,12 +4,14 @@ import joblib
 import traceback
 import pandas as pd
 import numpy as np
+
+# Import the data pre-processing toolbox function from "data_preprocess.py"
 from data_preprocess import data_preprocess
 
-# Your API definition
+# Create API instance
 app = Flask(__name__)
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])  # This decorator indicates which URL "/predict" should trigger the execution of the func predict
 def predict():
     if logreg:
         try:
@@ -44,7 +46,7 @@ def predict():
         print ('Train the model first')
         return ('No model here to use')
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # To be executed when "sudo python3 api.py" is run in server terminal
 
     logreg = joblib.load("logreg.pkl") # logreg.pkl"
     print ('Model loaded')
