@@ -13,7 +13,7 @@ In this excercise, the Flask API will be used. It has an inbuilt light-weight we
 Flask web server will be installed on a publicly accessible AWS instance and will be configured to respond to JSON requests (sent by a Postman API client) with song type predictions.  
 
 Three files obtained from the model training excercise will be available on the server : Check link https://github.com/femtonelson/Classifying-Songs-Genres-From-Audio-Data
-- data_preprocess.py : Contains a function which pre-processes an input pandas dataframe and returns a numpy array with the reduced features
+- api.py : Contains a function which pre-processes an input pandas dataframe and returns a numpy array with the reduced features
                        Columns expected in the input dataframe : track_id, acousticness, danceability, energy, instrumentalness, liveness, speechiness, tempo, valence
 - logreg.pkl : The trained Logistic Regression model
 - logreg_columns.pkl : The column names of the input dataframe
@@ -21,21 +21,54 @@ Three files obtained from the model training excercise will be available on the 
 # Model Deployment Procedure
 
 - Setup AWS EC2 instance in a public subnet with a public IP address
-- Install and configure Flask on this machine, to be accessible on suitable port
-- Run Postman API client, send requests to the server to obtain predictions
+- Install and configure Flask on this machine, to be accessible on port 5500 for example
+- Run Postman API client and send requests to the server to obtain predictions
+
+# Setup a publicly accessible AWS EC2 Instance and Flask API Server
+```
+# Install Flask and necessary Python packages
+$sudo apt-get update
+$sudo apt install python3-pip
+$sudo pip3 install flask
+$sudo pip3 install pandas
+$sudo pip3 install joblib
+$sudo pip3 install -U scikit-learn 
+
+#Launch Flask application
+$sudo python3 api.py
+(base) ubuntu@ip-10-0-4-193:~$ sudo python3 api.py
+Model loaded
+Model columns loaded
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5500/ (Press CTRL+C to quit)
+ * Restarting with stat
+Model loaded
+Model columns loaded
+ * Debugger is active!
+ * Debugger PIN: 150-894-586
+
+```
+
+# Send JSON Requests to Flask in API client - Postman
+
+- Download Postman : https://www.getpostman.com/downloads/
+
+- Set 'POST' method for forwarding JSON requests as specified in "api.py" and provide the URL to the prediction server : http://PublicIP.Of.EC2.Instance:5500/predict
+
+- Set the Request Format as "JSON".
+
+NB : For principal component analysis algorithm to work, the number of components chosen in the training process : n_components = 6 must not exceed min(n_samples, n_features).
+Given the number of features is 8 : acousticness, danceability, energy, instrumentalness, liveness, speechiness, tempo, valence
+We must provide at least 06 samples in a prediction request on Postman.
+
+- [Example of Request](/Example-of-request.json), [Example of Response](/Example-of-response.json)
+<img src="./postman-request-response.jpg">
 
 
-# Setup a publicly accessible AWS EC2 Instance - Flask API Server
-
-
-
-
-# Flask API Configuration
-
-
-
-
-# Testing the API in API client - Postman
 
 
 
