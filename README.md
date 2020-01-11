@@ -23,6 +23,8 @@ Three files obtained from the model training excercise should be available in th
 - logreg.pkl : The trained Logistic Regression model
 - logreg_columns.pkl : The column names of the input dataframe
 
+Also
+- The API configuration file : api.py is required in this directory
 
 # Setup a publicly accessible AWS EC2 Instance and install Flask API Server
 ```
