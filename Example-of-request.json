@@ -1,0 +1,8 @@
+[
+{"track_id":2,"acousticness":0.3744077685,"danceability":0.5286430621,"energy":0.8174611317,"instrumentalness":0.0018511032,"liveness":0.1058799438,"speechiness":0.4618181276,"tempo":126.957,"valence":0.2692402421},
+{"track_id":3,"acousticness":0.977281533,"danceability":0.4688077411,"energy":0.134975265,"instrumentalness":0.687699751,"liveness":0.1053807374,"speechiness":0.0731240339,"tempo":119.646,"valence":0.4307074319},
+{"track_id":4,"acousticness":0.9533492808,"danceability":0.4985245768,"energy":0.5525028695,"instrumentalness":0.924390987,"liveness":0.6849144746,"speechiness":0.0288845449,"tempo":78.958,"valence":0.430448363},
+{"track_id":6,"acousticness":0.9749394177,"danceability":0.2736289228,"energy":0.4479331129,"instrumentalness":0.9610853678,"liveness":0.0919915412,"speechiness":0.0393368007,"tempo":81.639,"valence":0.7036473058},
+{"track_id":5,"acousticness":0.6132286964,"danceability":0.5003198943,"energy":0.4879923568,"instrumentalness":0.9368112833,"liveness":0.6377504698,"speechiness":0.0303270352,"tempo":112.667,"valence":0.8247492682},
+{"track_id":1,"acousticness":0.4166752327,"danceability":0.6758939853,"energy":0.6344762684,"instrumentalness":0.0106280683,"liveness":0.1776465712,"speechiness":0.1593100648,"tempo":165.922,"valence":0.576660988}
+]
