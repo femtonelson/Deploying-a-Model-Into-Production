@@ -24,7 +24,7 @@ Three files obtained from the model training excercise should be available in th
 - logreg_columns.pkl : The column names of the input dataframe
 
 
-# Setup a publicly accessible AWS EC2 Instance and Flask API Server
+# Setup a publicly accessible AWS EC2 Instance and install Flask API Server
 ```
 # Install Flask and necessary Python packages
 $sudo apt-get update
@@ -33,8 +33,10 @@ $sudo pip3 install flask
 $sudo pip3 install pandas
 $sudo pip3 install joblib
 $sudo pip3 install -U scikit-learn 
+```
 
-#Launch Flask application
+#Configure Flask application, configuration file : ""[api.py](/api.py)
+
 $sudo python3 api.py
 (base) ubuntu@ip-10-0-4-193:~$ sudo python3 api.py
 Model loaded
