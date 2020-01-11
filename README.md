@@ -130,7 +130,7 @@ Model columns loaded
 
 - Download Postman : https://www.getpostman.com/downloads/
 
-- Set 'POST' method for forwarding JSON requests as specified in "api.py" and provide the URL to the prediction server : http://PublicIP.Of.EC2.Instance:5500/predict
+- Set 'POST' method for forwarding JSON requests as specified in "api.py" and provide the URL of the prediction server : http://PublicIP.Of.EC2.Instance:5500/predict
 
 - Set the Request Format as "JSON".
 
