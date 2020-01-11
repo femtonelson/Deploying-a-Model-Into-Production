@@ -35,7 +35,7 @@ $sudo pip3 install joblib
 $sudo pip3 install -U scikit-learn 
 ```
 
-# Configure Flask application, configuration file : ""[api.py](/api.py)
+# Configure Flask application, configuration file : [api.py](/api.py)
 
 ```
 $sudo python3 api.py
