@@ -46,7 +46,8 @@ def data_preprocess(input_df):
     pca = PCA(n_components, random_state=10)
     pca.fit(scaled_train_features)
     pca_projection = pca.transform(scaled_train_features)
-    # Return the reduced numpy array with n_components = 6 features
+    
+	# Return the reduced numpy array with n_components = 6 features
     return pca_projection
 ```
 
