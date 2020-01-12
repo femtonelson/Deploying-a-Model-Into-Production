@@ -21,7 +21,8 @@ Flask web server will be installed on a publicly accessible AWS instance and con
 Three files obtained from the model training excercise should be available in the working directory on the server :
 - data_preprocess.py : Provides the function which pre-processes an input pandas dataframe and returns a numpy array with the reduced features
 
-<details><summary>Content of data_preprocess.py</summary>
+<details>
+<summary>Content of data_preprocess.py</summary>
 <p>
 ```
 
@@ -50,7 +51,8 @@ def data_preprocess(input_df):
     pca_projection = pca.transform(scaled_train_features)
     # Return the reduced numpy array with n_components = 6 features
     return pca_projection
-```</p></details>
+```</p>
+</details>
 
 - logreg.pkl : The trained Logistic Regression model
 - logreg_columns.pkl : The column names of the input dataframe
@@ -71,7 +73,8 @@ $sudo pip3 install -U scikit-learn
 
 # Configure Flask application, configuration file : [api.py](/api.py)
 
-<details><summary>Content of api.py</summary>
+<details>
+<summary>Content of api.py</summary>
 <p>
 
 ```python
