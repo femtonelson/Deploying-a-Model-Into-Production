@@ -51,6 +51,7 @@ def data_preprocess(input_df):
 ```
 </p>
 </details>
+
 - logreg.pkl : The trained Logistic Regression model
 - logreg_columns.pkl : The column names of the input dataframe
 
