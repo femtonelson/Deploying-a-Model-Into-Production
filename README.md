@@ -22,8 +22,8 @@ Three files obtained from the model training excercise should be available in th
 - data_preprocess.py : Provides the function which pre-processes an input pandas dataframe and returns a numpy array with the reduced features
 
 <details>
-<summary>Content of data_preprocess.py</summary>
 <p>
+<summary>Content of data_preprocess.py</summary>
 ```
 
 def data_preprocess(input_df):
