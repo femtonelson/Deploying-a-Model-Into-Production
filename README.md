@@ -10,7 +10,7 @@ between different technologies with a standard exhange format. APIs (Application
 along with a definition of the structure of response messages, usually in an Extensible Markup Language (XML) or JavaScript Object Notation (JSON) format. 
 In this excercise, the Flask API will be used. It has an inbuilt light-weight web server which needs minimal configuration, and it can be controlled from Python code.
 
-Flask web server will be installed on a publicly accessible AWS instance and will be configured to respond to JSON requests (sent by a Postman API client) with song type predictions.  
+Flask web server will be installed on a publicly accessible AWS instance and configured to respond to JSON requests (sent by a Postman API client) with song type predictions.  
 
 # Model Deployment Procedure
 
