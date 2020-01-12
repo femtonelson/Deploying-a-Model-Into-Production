@@ -82,7 +82,7 @@ def predict():
             # Print result in server terminal
             print(output_df)
 
-            # Convert the output pack to JSON and send to client
+            # Convert the output to JSON and send to client
             return output_df.to_json(orient='records')
 
         except:
