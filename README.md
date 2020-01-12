@@ -50,9 +50,7 @@ def data_preprocess(input_df):
     pca_projection = pca.transform(scaled_train_features)
     # Return the reduced numpy array with n_components = 6 features
     return pca_projection
-```
-</p>
-</details>
+```</p></details>
 
 - logreg.pkl : The trained Logistic Regression model
 - logreg_columns.pkl : The column names of the input dataframe
