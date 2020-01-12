@@ -21,7 +21,7 @@ Flask web server will be installed on a publicly accessible AWS instance and con
 Three files obtained from the model training excercise should be available in the working directory on the server :
 - data_preprocess.py : Provides the function which pre-processes an input pandas dataframe and returns a numpy array with the reduced features
 
-<details><summary>data_preprocess.py</summary>
+<details><summary>Content of data_preprocess.py</summary>
 <p>
 ```python
 def data_preprocess(input_df):
@@ -70,8 +70,8 @@ $sudo pip3 install -U scikit-learn
 ```
 
 # Configure Flask application, configuration file : [api.py](/api.py)
-## Click below to see the content of api.py
-<details><summary>api.py</summary>
+
+<details><summary>Content of api.py</summary>
 <p>
 
 ```python
